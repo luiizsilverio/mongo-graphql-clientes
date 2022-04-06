@@ -33,7 +33,6 @@ $ yarn dev
 ```
 Acesse o link [http://localhost:3000/clientes](http://localhost:3000/clientes) para rodar as queries e mutations.
 <br />
-<br />
 
 
 ## Exemplos de Queries
@@ -62,9 +61,9 @@ Acesse o link [http://localhost:3000/clientes](http://localhost:3000/clientes) p
 ```graphql
 mutation {
   insertCliente(input: {
-    nome: "Sarah",
-    idade: 7,
-    email: "sarah@gmail"
+    nome: "Luiz",
+    idade: 37,
+    email: "luiz@gmail.com"
   }) {
     id,
     nome,
@@ -79,9 +78,9 @@ mutation {
 
 mutation {
   updateCliente(id: "622b81013bc3868bd68094c2", input: {
-    nome: "Nísea",
-    idade: 72,
-    email: "nisea@gmail"
+    nome: "João",
+    idade: 32,
+    email: "joao@gmail.com"
   })
 }
 ```
