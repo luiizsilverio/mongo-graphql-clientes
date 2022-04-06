@@ -1,0 +1,30 @@
+const typeDefs = /* GraphQL */ `
+  type Cliente {
+    # _id: ID
+    id: ID,         # ID é um tipo pré-definido do GraphQL
+    nome: String!,
+    idade: Int,   # Float
+    email: String
+  }
+
+  input inputCliente {
+    nome: String,
+    idade: Int,   # Float
+    email: String
+  }
+
+  type Query {
+    resposta: String,
+    saudacao(nome: String!): String,
+    findCliente(id: String): Cliente,
+    findClientes(input: inputCliente): [Cliente]
+  }
+
+  type Mutation {
+    insertCliente(input: inputCliente): Cliente,
+    updateCliente(id: String!, input: inputCliente): String,
+    deleteCliente(id: String!): String
+  }
+`;
+
+module.exports = typeDefs

@@ -1,0 +1,27 @@
+{
+  "name": "mongo-graphql-clientes",
+  "version": "1.0.0",
+  "description": "Node + Mongo + GraphQL",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "graphql"
+  ],
+  "author": "Luiz Oliveira <luiiz.silverio@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.3.0",
+    "graphql-tools": "^8.2.0",
+    "mongodb": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
